@@ -19,6 +19,7 @@ import { ChatComponent } from './components/chat/chat.component';
 import { LoginComponent } from './pages/login/login.component';
 import { AppRoutingModule } from './app-routing.module';
 import { MessagesComponent } from './pages/messages/messages.component';
+import { SidebarComponent } from './components/sidebar/sidebar.component';
 
 
 
@@ -29,7 +30,8 @@ import { MessagesComponent } from './pages/messages/messages.component';
     FooterComponent,
     ChatComponent,
     LoginComponent,
-    MessagesComponent
+    MessagesComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,
