@@ -12,10 +12,8 @@ export class ChatService {
 
     sendMessage( mensaje: string ) {
 
-      let userName = localStorage.getItem('username');
-
       const payload = {
-        de: userName || 'Bruh',
+        de: this.wsService.getUser().name,
         cuerpo: mensaje
       };
 
@@ -28,7 +26,8 @@ export class ChatService {
     }
 
     getUserInfo(){
-      return this.wsService.listen('data-assignment');
+      console.log("get user info");
+      return this.wsService.listen('user-config');
     }
 
 }

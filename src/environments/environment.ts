@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  wsUrl: 'https://ogb-game-server.herokuapp.com/'
+  wsUrl: 'http://localhost:5000'
 };
 
 /*

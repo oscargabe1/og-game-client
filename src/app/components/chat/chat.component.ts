@@ -25,7 +25,6 @@ export class ChatComponent implements OnInit, OnDestroy {
 
   ngOnInit() {
 
-    this.assignData();
 
     this.elemento = document.getElementById('chat-mensajes');
 
@@ -56,10 +55,10 @@ export class ChatComponent implements OnInit, OnDestroy {
     this.texto = '';
   }
 
-  assignData(){
-    this.chatService.getUserInfo().subscribe( (msg:User) =>{
-      localStorage.setItem('username',msg.name);
-    })
-  }
+  // assignData(){
+  //   this.chatService.getUserInfo().subscribe( (msg:User) =>{
+  //     localStorage.setItem('username',msg.name);
+  //   })
+  // }
 
 }
