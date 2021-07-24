@@ -14,6 +14,7 @@ export class WebsocketService {
   constructor(
     private socket: Socket
   ) {
+    this.loadStorage();
     this.checkStatus();
   }
 
@@ -48,7 +49,7 @@ export class WebsocketService {
     }
 
     loginWS( name: string ) {
-      return new Promise(  (resolve, reject) => {
+      return new Promise( (resolve, reject) => {
         this.emit( 'user-config', { name }, resp => {
 
           this.user = new User( name );
@@ -64,6 +65,13 @@ export class WebsocketService {
 
     saveStorage() {
       localStorage.setItem( 'user', JSON.stringify( this.user ) );
+    }
+
+    loadStorage(){
+      if ( localStorage.getItem('user') ) {
+        this.user = JSON.parse( localStorage.getItem('user') );
+        this.loginWS( this.user.name );
+      }
     }
 
 }
