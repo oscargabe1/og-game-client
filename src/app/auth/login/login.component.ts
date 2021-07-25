@@ -29,7 +29,7 @@ export class LoginComponent implements OnInit {
         console.log("entro");
 
 
-        this.router.navigateByUrl('/messages');
+        this.router.navigateByUrl('/dashboard/messages');
 
       });
 

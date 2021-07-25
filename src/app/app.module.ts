@@ -14,12 +14,10 @@ const config: SocketIoConfig = {
 
 import { AppComponent } from './app.component';
 import { environment } from '../environments/environment';
-import { FooterComponent } from './components/footer/footer.component';
-import { ChatComponent } from './components/chat/chat.component';
-import { LoginComponent } from './pages/login/login.component';
 import { AppRoutingModule } from './app-routing.module';
-import { MessagesComponent } from './pages/messages/messages.component';
-import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { PagesModule } from './pages/pages.module';
+import { AuthModule } from './auth/auth.module';
+import { NopagefoundComponent } from './nopagefound/nopagefound.component';
 
 
 
@@ -27,17 +25,16 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
 @NgModule({
   declarations: [
     AppComponent,
-    FooterComponent,
-    ChatComponent,
-    LoginComponent,
-    MessagesComponent,
-    SidebarComponent
+    NopagefoundComponent,
+    
   ],
   imports: [
     BrowserModule,
     FormsModule,
     SocketIoModule.forRoot(config),
-    AppRoutingModule
+    AppRoutingModule,
+    PagesModule,
+    AuthModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,8 +1,7 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { ChatService } from '../../services/chat.service';
 import { Subscription } from 'rxjs';
-import { User } from '../../models/user';
-import { UserService } from 'src/app/services/user.service';
+import { User } from '../../../models/user';
+import { ChatService } from '../../../services/chat.service';
 //import { UserData } from '../../interfaces/user-data';
 
 @Component({
@@ -21,9 +20,7 @@ export class ChatComponent implements OnInit, OnDestroy {
 
 
   constructor(
-    public chatService: ChatService,
-    public userService: UserService
-  ) { }
+    public chatService: ChatService  ) { }
 
   ngOnInit() {
 
@@ -57,9 +54,5 @@ export class ChatComponent implements OnInit, OnDestroy {
     this.texto = '';
   }
 
-  logoff(){
-    console.log("logoff");
-    this.userService.logoff();
-  }
 
 }
