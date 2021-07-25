@@ -1,11 +1,14 @@
 <div class="body">
-  <nav class="navbar">
+  <nav class="navbar" [ngClass] = "sharedService.expandedSidebar ? 'toggled-nav' : 'untoggled-nav'">
     <ul class="navbar-nav">
       
-      <li class="logo">
-        <a href="#" class="nav-link">
-          <span class="link-text logo-text"> Oscar<span class="fa-secondary">GB</span></span>
-          <svg
+      <li class="logo" >
+        <a class="nav-link">
+          <span class="link-text logo-text"
+            [class.text-opacity]="toggled">
+            Oscar<span class="fa-secondary">GB</span>
+          </span>
+          <!-- <svg *ngIf="sharedService.expandedSidebar" (click)="toggle()"
             aria-hidden="true"
             focusable="false"
             data-prefix="fad"
@@ -14,6 +17,8 @@
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 448 512"
             class="svg-inline--fa fa-angle-double-right fa-w-14 fa-5x"
+            [class.toggled] = "sharedService.expandedSidebar"
+            [class.untoggled] = "!sharedService.expandedSidebar"
           >
             <g class="fa-group">
               <path
@@ -27,7 +32,15 @@
                 class="fa-primary"
               ></path>
             </g>
-          </svg>
+          </svg> -->
+          <i
+          (click)="toggle()"
+            class="fa expand-menu fa-secondary" 
+            [class.toggled] = "sharedService.expandedSidebar"
+            [class.untoggled] = "!sharedService.expandedSidebar"
+            [ngClass] = "sharedService.expandedSidebar ? 'fa-arrow-left' : 'fa-bars'"
+            aria-hidden="true">
+          </i>
         </a>
       </li>
 
@@ -56,7 +69,7 @@
               ></path>
             </g>
           </svg>
-          <span class="link-text">Cats</span>
+          <span class="link-text" [class.text-opacity]="toggled">Cats</span>
         </a>
       </li>
 
@@ -85,7 +98,7 @@
               ></path>
             </g>
           </svg>
-          <span class="link-text">Aliens</span>
+          <span class="link-text" [class.text-opacity]="toggled">Aliens</span>
         </a>
       </li>
 
@@ -114,7 +127,7 @@
               ></path>
             </g>
           </svg>
-          <span class="link-text">Space</span>
+          <span class="link-text" [class.text-opacity]="toggled">Space</span>
         </a>
       </li>
 
@@ -143,7 +156,7 @@
               ></path>
             </g>
           </svg>
-          <span class="link-text">Shuttle</span>
+          <span class="link-text" [class.text-opacity]="toggled">Shuttle</span>
         </a>
       </li>
 
