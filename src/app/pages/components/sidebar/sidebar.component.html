@@ -6,23 +6,24 @@
         <a class="nav-link">
           <span class="link-text logo-text"
             [class.text-opacity]="toggled">
-            Oscar<span class="fa-secondary">GB</span>
-          </span>
-         
-          <i
-          (click)="toggle()"
-            class="fa expand-menu fa-secondary" 
-            [class.toggled] = "sharedService.expandedSidebar"
-            [class.untoggled] = "!sharedService.expandedSidebar"
-            [ngClass] = "sharedService.expandedSidebar ? 'fa-arrow-left' : 'fa-bars'"
-            aria-hidden="true">
-          </i>
+            SECTIONS
+          </span>   
+          
+            <i
+            (click)="toggle()"
+              class="fa expand-menu fa-secondary" 
+              [class.toggled] = "sharedService.expandedSidebar"
+              [class.untoggled] = "!sharedService.expandedSidebar"
+              [ngClass] = "sharedService.expandedSidebar ? 'fa-arrow-left' : 'fa-bars'"
+              aria-hidden="true">
+            </i>
+            
         </a>
       </li>
 
 
       <li class="nav-item">
-        <a routerLink="/dashboard/messages" class="nav-link">
+        <a routerLink="/dashboard/messages" class="nav-link nv-hover">
           <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-emoji-smile" viewBox="0 0 16 16">
             
             <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" class="fa-secondary"/>
@@ -33,7 +34,7 @@
       </li>
 
       <li class="nav-item">
-        <a href="#" class="nav-link">
+        <a href="#" class="nav-link nv-hover">
           <svg
             aria-hidden="true"
             focusable="false"
@@ -62,7 +63,7 @@
       </li>
 
       <li class="nav-item">
-        <a href="#" class="nav-link">
+        <a href="#" class="nav-link nv-hover">
           <svg
             aria-hidden="true"
             focusable="false"

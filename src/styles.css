@@ -74,6 +74,7 @@ body{
      main{
          margin: 0 !important;
          padding: 1rem;
+         padding-top: 4.5rem; /* If app-header */
      }
  
    }

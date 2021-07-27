@@ -13,7 +13,7 @@
 }
 
  .navbar{
-    /* margin-top: 4rem; */
+    margin-top: 4rem;
     padding: 0px !important;
     position: fixed;
     background-color: var(--bg-primary); 
@@ -35,15 +35,17 @@
 .logo{
     font-weight: bold;
     text-transform: uppercase;
-    margin-bottom: 1rem;
     text-align: center;
     color: var(--text-secondary);
-    background: var(--bg-secondary);
+    background: var(--bg-primary);
     font-size: 1.5rem;
-    letter-spacing: 0.3ch;
+    letter-spacing: 0.2ch;
     width: 100%;
-    cursor: pointer;
-
+    align-items: center;
+}
+.logo-text{
+    padding-left: 0.5rem;
+    font-size: 1rem;
 }
 
 .logo svg{
@@ -57,7 +59,7 @@
   
 .nav-item:last-child {
     margin-top: auto;
-    margin-bottom: 20px;
+    margin-bottom: 5rem;
 }
 
 .nav-link {
@@ -70,7 +72,8 @@
     transition: var(--transition-speed);
 }
 
-.nav-link:hover {
+
+.nv-hover:hover {
     filter: grayscale(0%) opacity(1);
     background: var(--bg-secondary);
     color: var(--text-secondary);
@@ -89,10 +92,14 @@
 }
 
 .expand-menu{
+    cursor: pointer;
     width: 2rem;
     min-width: 2rem;
     margin: 0 1.5rem;
     position: fixed;
+    /* padding:1rem; */
+    
+    
 }
 
 /* Big screen */
@@ -107,7 +114,7 @@
     }
     
     .toggled-nav .expand-menu{
-        margin-left: 12rem;
+        margin-left: 13rem;
         transition: all 300ms;
     }
     

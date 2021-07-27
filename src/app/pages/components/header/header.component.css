@@ -1,8 +1,36 @@
-nav{
-    padding: 0px !important;
+.header{
     position: fixed;
     background-color: var(--bg-secondary); 
     transition: width 200ms ease;
-    margin: 0rem;
     width: 100vw;
+    height: 4rem;
+    align-items: center;
+    z-index: 1000;
+}
+
+.header-item{
+    height: 100% !important;
+    list-style: none;
+    align-items: center;
+}
+.header-list{
+    margin-bottom: 0px !important;
+    height: 100% !important;
+    padding-left: 0px !important;
+}
+.nav-link{
+    height: 100% !important;
+    align-items: center;
+    padding-top: 0.8rem;
+    padding-left: 1.5rem;
+}
+.logo{
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--text-secondary);
+    background: var(--bg-secondary);
+    font-size: 1.5rem;
+    letter-spacing: 0.3ch;
+    width: 100%;
+    cursor: pointer;
 }
