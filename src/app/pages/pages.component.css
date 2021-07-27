@@ -1,0 +1,9 @@
+.expandedSidebar{
+    transition: all 300ms;
+    margin-left: 16rem;
+}
+
+.not-expandedSidebar{
+    transition: all 300ms;
+    margin-left: 5rem;
+}

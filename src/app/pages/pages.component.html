@@ -1,5 +1,5 @@
 <app-sidebar></app-sidebar>
-<main class="ogmain">
+<main [ngClass] = "sharedService.expandedSidebar ? 'expandedSidebar' : 'not-expandedSidebar'">
   <router-outlet></router-outlet>
 </main>
 
