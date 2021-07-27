@@ -8,6 +8,7 @@ import { MessagesComponent } from './messages/messages.component';
 import { ChatComponent } from './components/chat/chat.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { HeaderComponent } from './components/header/header.component';
 
 
 
@@ -17,7 +18,8 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
     MessagesComponent,
     ChatComponent,
     FooterComponent,
-    SidebarComponent
+    SidebarComponent,
+    HeaderComponent
   ],
   exports:[
     PagesComponent,

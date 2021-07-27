@@ -1,0 +1,8 @@
+nav{
+    padding: 0px !important;
+    position: fixed;
+    background-color: var(--bg-secondary); 
+    transition: width 200ms ease;
+    margin: 0rem;
+    width: 100vw;
+}
