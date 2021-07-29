@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { SidebarItem } from '../../../interfaces/sidebar-item';
 import { SharedService } from '../../../services/shared.service';
+import { SidebarItems } from "./sidebar.items";
 
 @Component({
   selector: 'app-sidebar',
@@ -9,6 +11,7 @@ import { SharedService } from '../../../services/shared.service';
 export class SidebarComponent implements OnInit {
 
   public toggled:boolean = false;
+  public items:Array<SidebarItem> = SidebarItems;
 
   constructor(private sharedService:SharedService) { }
 

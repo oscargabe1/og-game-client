@@ -59,10 +59,7 @@
     width: 100%;
 }
   
-.nav-item:last-child {
-    margin-top: auto;
-    margin-bottom: 5rem;
-}
+
 
 .nav-link {
     display: flex;
@@ -189,6 +186,10 @@
         filter: grayscale(0%) opacity(1);
     }
 
+    .nav-item:last-child {
+        margin-top: auto;
+        margin-bottom: 5rem;
+    }
 
 
 }
