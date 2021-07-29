@@ -11,17 +11,17 @@
           
             <i
             (click)="toggle()"
-              class="nav-link-logo fa expand-menu fa-secondary" 
+              class="nav-link-logo expand-menu fa-secondary" 
               [class.toggled] = "sharedService.expandedSidebar"
               [class.untoggled] = "!sharedService.expandedSidebar"
-              [ngClass] = "sharedService.expandedSidebar ? 'fa-arrow-left' : 'fa-bars'"
+              [ngClass] = "sharedService.expandedSidebar ? 'fa fa-arrow-left' : 'fa fa-bars'"
               aria-hidden="true">
             </i>
             
           </div>
       </li>
 
-      <li *ngFor="let item of items" class="nav-item">
+      <li *ngFor="let item of items" class="nav-item" [ngClass] = "item.main ? '' : 'remove'">
         <a [routerLink]="item.link" class="nav-link nv-hover">
           <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" viewBox="0 0 16 16">
             <path *ngFor="let path of item.icon.paths" [attr.d]="path.d" [ngClass] = "path.class ? path.class : ''"  />

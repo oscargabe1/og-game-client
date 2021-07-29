@@ -7,6 +7,7 @@ interface SvgPath {
 export interface SidebarItem {
     title: string;
     link: string;
+    main: boolean;
     fill?: string;
     icon: {
         class: string;

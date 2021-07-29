@@ -4,6 +4,7 @@ export const SidebarItems:Array<SidebarItem> = [
     {
         title: 'Aliens',
         link: '/dashboard/messages',
+        main: true,
         fill: 'currentColor',
         icon: {
         class: 'bi bi-arrow-bar-right',
@@ -19,6 +20,7 @@ export const SidebarItems:Array<SidebarItem> = [
     {
         title: 'Space',
         link: '/dashboard/messages',
+        main: true,
         fill: 'currentColor',
         icon: {
         class: 'bi bi-wallet-fill',
@@ -39,6 +41,7 @@ export const SidebarItems:Array<SidebarItem> = [
     {
         title: 'Twitch',
         link: '/dashboard/messages',
+        main: true,
         fill: 'currentColor',
         icon: {
         class: 'bi bi-twitch',
@@ -60,6 +63,7 @@ export const SidebarItems:Array<SidebarItem> = [
     {
         title: 'Cold',
         link: '/dashboard/messages',
+        main: true,
         fill: 'currentColor',
         icon: {
         class: 'bi bi-thermometer-snow',
@@ -81,6 +85,7 @@ export const SidebarItems:Array<SidebarItem> = [
     {
         title: 'Mail',
         link: '/dashboard/messages',
+        main: false,
         fill: 'currentColor',
         icon: {
         class: 'bi bi-envelope-fill',

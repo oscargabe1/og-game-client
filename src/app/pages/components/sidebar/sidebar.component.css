@@ -1,10 +1,6 @@
 .body{
     font-size: 16px;
     font-family: 'Open Sans';
-    color: black;
-    background-color: white;
-    margin: 0;
-    padding: 0;
     --text-primary: #b6b6b6;
      --text-secondary: #ececec;
      --bg-primary: #23232e;
@@ -71,7 +67,6 @@
 
 .nav-link-logo:hover{
     filter: grayscale(0%) opacity(1);
-    background-color: green;
 }
 
 .nv-hover{
@@ -82,7 +77,6 @@
     filter: grayscale(100%) opacity(0.7);
     color: var(--text-primary);
     transition: var(--transition-speed);
-
 }
 
 
@@ -135,12 +129,7 @@
         border-radius: 10px;
 
         filter: grayscale(100%) opacity(0.7);
-        /* margin-left: 0px !important; */
         padding: 0.5rem 2.4rem 0.5rem 1rem !important;
-        /* border-style: solid; */
-        /* border-color: red;
-        border-radius: 2px;
-        border-width: 10px; */
     }
     .toggled-nav .nav-link-logo:hover{
         
@@ -173,15 +162,8 @@
         margin-left: 0.8rem !important;
         margin-top: -0.2rem;
         padding: 0.5rem 2.4rem 0.5rem 1rem !important;
-        /* border-style: solid; */
-        /* border-color: red;
-        border-radius: 2px;
-        border-width: 10px; */
     }
     .untoggled-nav .nav-link-logo:hover{
-        /* filter: grayscale(0%) opacity(1); */
-        /* border-radius: 30%;
-        background-color: green; */
         background-color: var(--bg-secondary);
         filter: grayscale(0%) opacity(1);
     }
@@ -204,6 +186,10 @@
 
     }
     .logo{
+        display: none;
+    }
+
+    .remove{
         display: none;
     }
 
