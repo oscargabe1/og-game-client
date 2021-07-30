@@ -9,6 +9,7 @@ import { ChatComponent } from './components/chat/chat.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { HeaderComponent } from './components/header/header.component';
+import { SliderSidebarComponent } from './components/slider-sidebar/slider-sidebar.component';
 
 
 
@@ -19,7 +20,8 @@ import { HeaderComponent } from './components/header/header.component';
     ChatComponent,
     FooterComponent,
     SidebarComponent,
-    HeaderComponent
+    HeaderComponent,
+    SliderSidebarComponent
   ],
   exports:[
     PagesComponent,

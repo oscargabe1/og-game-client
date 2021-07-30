@@ -1,7 +1,9 @@
-<app-sidebar></app-sidebar>
-<app-header></app-header>
-<main [ngClass] = "sharedService.expandedSidebar ? 'expandedSidebar' : 'not-expandedSidebar'">
-  <router-outlet></router-outlet>
-</main>
+<div class="og-container">
+  <app-sidebar></app-sidebar>
+  <app-header></app-header>
+  <main [ngClass] = "sharedService.expandedSidebar ? 'expandedSidebar' : 'not-expandedSidebar'">
+    <router-outlet></router-outlet>
+  </main>
+</div>
 
 <!-- <app-footer></app-footer> -->

@@ -1,0 +1,39 @@
+<svg (click)="displayMenu()"
+    xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+</svg>
+
+<nav [ngClass] = "toggleAnimation ? 'toggled' : 'untoggled'">
+    <ul class="navbar-nav">
+      
+        <li class="logo" >
+          <div class="nav-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-bar-left" viewBox="0 0 16 16" (click)="closeMenu()">
+                <path fill-rule="evenodd" d="M12.5 15a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5zM10 8a.5.5 0 0 1-.5.5H3.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L3.707 7.5H9.5a.5.5 0 0 1 .5.5z"/>
+            </svg>
+
+            <span class="link-text logo-text">
+                APP<span class="fa-secondary">NAME</span>
+            </span>  
+              
+            </div>
+        </li>
+  
+        <li *ngFor="let item of items" class="nav-item">
+          <a [routerLink]="item.link" class="nav-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" viewBox="0 0 16 16">
+              <path *ngFor="let path of item.icon.paths" [attr.d]="path.d"  />
+            </svg>
+            <span class="link-text">{{item.title}}</span>
+          </a>
+        </li>
+  
+  
+        
+      </ul>
+</nav>
+
+<div [ngClass] = "toggleAnimation ? 'toggled-b' : 'untoggled-b'" class="background" (click)="closeMenu()">
+
+</div>
+

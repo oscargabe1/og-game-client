@@ -15,10 +15,6 @@ body{
      --transition-speed: 400ms;
 }
 
- 
-
-
- 
 
  
 .fa-primary{
@@ -97,3 +93,4 @@ body{
     .chat-input {
         margin-top: 10px;
     }
+

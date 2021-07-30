@@ -85,4 +85,24 @@
 }
 
 
+@media only screen and (min-width: 600px){
+    app-slider-sidebar{
+        display: none;
+    }
+    
+}
+@media only screen and (max-width: 600px){
+
+    app-slider-sidebar{
+        color: var(--text-primary);
+        height: 100% !important;
+        align-items: center;
+        padding: 1rem 1rem 0rem 1rem;
+        z-index: 10000;
+    }
+
+    .logo{
+        display: none;
+    }
+}
 
