@@ -1,5 +1,5 @@
 .body{
-    font-size: 16px;
+    font-size: 14px;
     font-family: 'Open Sans';
     --text-primary: #b6b6b6;
      --text-secondary: #ececec;
@@ -61,6 +61,7 @@
     display: flex;
     height: 4rem;
     align-items: center;  
+    margin-left: -0.5rem;
 }
 
 
@@ -121,7 +122,7 @@
     }
     
     .toggled-nav .expand-menu{
-        margin-left: 12.3rem;
+        margin-left: 12.5rem;
         transition: all 300ms;
     }
 
@@ -129,7 +130,7 @@
         border-radius: 10px;
 
         filter: grayscale(100%) opacity(0.7);
-        padding: 0.5rem 2.4rem 0.5rem 1rem !important;
+        padding: 0.2rem 2.4rem 0.5rem 1rem !important;
     }
     .toggled-nav .nav-link-logo:hover{
         
@@ -139,7 +140,7 @@
     
     
     .untoggled-nav{
-        width: 5rem !important; 
+        width: 4.05rem !important; 
     }
     .untoggled-nav .link-text{
         opacity: 0;
@@ -159,9 +160,8 @@
     .untoggled-nav .nav-link-logo{
         border-radius: 10px;
         filter: grayscale(100%) opacity(0.7);
-        margin-left: 0.8rem !important;
-        margin-top: -0.2rem;
-        padding: 0.5rem 2.4rem 0.5rem 1rem !important;
+        padding: 0.2rem 2.4rem 0.5rem 1rem !important;
+
     }
     .untoggled-nav .nav-link-logo:hover{
         background-color: var(--bg-secondary);
@@ -171,6 +171,10 @@
     .nav-item:last-child {
         margin-top: auto;
         margin-bottom: 5rem;
+    }
+
+    .menu-svg{
+        margin-left: -0.3rem !important; 
     }
 
 

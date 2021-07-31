@@ -9,21 +9,22 @@
             SECTIONS
           </span>   
           
-            <i
-            (click)="toggle()"
-              class="nav-link-logo expand-menu fa-secondary" 
-              [class.toggled] = "sharedService.expandedSidebar"
-              [class.untoggled] = "!sharedService.expandedSidebar"
-              [ngClass] = "sharedService.expandedSidebar ? 'fa fa-arrow-left' : 'fa fa-bars'"
-              aria-hidden="true">
-            </i>
+          <a (click)="toggle()"
+          class="nav-link-logo expand-menu" 
+          [class.toggled] = "sharedService.expandedSidebar"
+          [class.untoggled] = "!sharedService.expandedSidebar">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="menu-svg fa-secondary" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" [attr.d]="icon"/>
+          </svg>
+            
+          </a>
             
           </div>
       </li>
 
       <li *ngFor="let item of items" class="nav-item" [ngClass] = "item.main ? '' : 'remove'">
         <a [routerLink]="item.link" class="nav-link nv-hover">
-          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" viewBox="0 0 16 16">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" viewBox="0 0 16 16">
             <path *ngFor="let path of item.icon.paths" [attr.d]="path.d" [ngClass] = "path.class ? path.class : ''"  />
           </svg>
           <span class="link-text" [class.text-opacity]="toggled">{{item.title}}</span>
